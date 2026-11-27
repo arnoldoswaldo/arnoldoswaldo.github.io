@@ -67,7 +67,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--s
 a { color: var(--accent); text-underline-offset: 3px; }
 a:focus-visible, .btn:focus-visible { outline: 3px solid var(--band-accent); outline-offset: 3px; border-radius: 4px; }
 .wrap { max-width: 58rem; margin: 0 auto; padding: 0 1.5rem; }
-
+ 
 /* Banda superior */
 .band {
   background-color: var(--band);
@@ -79,7 +79,7 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--band-accent); out
 nav.top { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; padding: 1.25rem 0; font-size: 0.95rem; }
 nav.top a { color: var(--band-muted); text-decoration: none; }
 nav.top a:hover { color: var(--band-ink); text-decoration: underline; }
-
+ 
 .hero { display: grid; gap: 2rem; align-items: center; padding: 2rem 0 4rem; }
 .photo {
   position: relative; width: 8.5rem; height: 8.5rem; border-radius: 28px; overflow: hidden;
@@ -99,8 +99,8 @@ nav.top a:hover { color: var(--band-ink); text-decoration: underline; }
   .hero { grid-template-columns: 1fr 14rem; gap: 3.5rem; }
   .photo { width: 14rem; height: 14rem; order: 0; font-size: 5rem; border-radius: 40px; }
 }
-
-
+ 
+ 
 /* Boton de tema e iconos sociales */
 nav.top { align-items: center; }
 .theme-btn { margin-left: auto; display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.08); color: var(--band-ink); border: 1.5px solid rgba(255,255,255,0.25); border-radius: 999px; padding: 0.35rem 0.9rem; font: inherit; font-size: 0.9rem; cursor: pointer; }
@@ -114,21 +114,21 @@ nav.top { align-items: center; }
 .social a { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; background: rgba(255,255,255,0.09); color: var(--band-ink); border: 1.5px solid rgba(255,255,255,0.2); }
 .social a:hover { background: var(--band-accent); color: #0b1f36; border-color: var(--band-accent); }
 .social svg { width: 1.3rem; height: 1.3rem; fill: currentColor; }
-
+ 
 /* Secciones */
 section { padding: 3rem 0; }
 section + section { border-top: 1px solid var(--rule); }
 h2 { font-family: var(--serif); font-size: 1.8rem; line-height: 1.2; margin: 0 0 1.5rem; }
 h2::after { content: ""; display: block; width: 2.75rem; height: 4px; background: var(--accent); border-radius: 2px; margin-top: 0.6rem; }
 section p { max-width: 38em; margin: 0 0 1rem; }
-
+ 
 ul.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0.5rem 0 0; padding: 0; }
 .chips li { background: var(--chip-bg); color: var(--chip-ink); padding: 0.15rem 0.65rem; border-radius: 999px; font-size: 0.85rem; font-weight: 500; }
-
+ 
 .featured { background: var(--surface); border: 1px solid var(--rule); border-left: 5px solid var(--accent); border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
 .featured h3 { font-size: 1.6rem; }
 .featured .desc { font-size: 1.1rem; }
-
+ 
 .project { display: grid; gap: 0.35rem 2rem; padding: 1.4rem 0; border-top: 1px solid var(--rule); }
 .project h3, .featured h3 { font-family: var(--serif); font-size: 1.25rem; line-height: 1.25; margin: 0 0 0.5rem; }
 .project .desc, .featured .desc { margin: 0; max-width: 38em; }
@@ -136,25 +136,25 @@ ul.chips { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin
   .project { grid-template-columns: 18rem 1fr; }
   .project .body { grid-column: 2; }
 }
-
+ 
 .alt { background: var(--surface); border-block: 1px solid var(--rule); }
 .skills { display: grid; gap: 1.25rem 2rem; margin: 0; }
 .skills dt { font-weight: 600; }
 .skills dd { margin: 0; }
 @media (min-width: 46rem) { .skills { grid-template-columns: 12rem 1fr; } .skills dd { margin-top: -0.5rem; } }
-
+ 
 ul.plain { list-style: none; margin: 0; padding: 0; }
 ul.plain li { padding: 0.8rem 0 0.8rem 1.1rem; border-left: 3px solid var(--rule); max-width: 44em; }
 ul.plain li:first-child { border-left-color: var(--accent); }
 ul.plain .org { display: block; color: var(--muted); font-size: 0.95rem; }
-
+ 
 footer.band { padding: 2.5rem 0 3.5rem; margin-top: 1rem; }
 .contact { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin: 0 0 1rem; padding: 0; list-style: none; font-size: 1.1rem; }
 footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
 </style>
 </head>
 <body>
-
+ 
 <div class="band">
 <div class="wrap">
   <nav class="top" aria-label="Secciones">
@@ -191,23 +191,23 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
   </header>
 </div>
 </div>
-
+ 
 <main class="wrap">
 <section id="sobre-mi">
   <h2>Sobre mí</h2>
   <p>Me gusta llevar un proyecto desde el modelo de datos hasta el despliegue. Trabajo con análisis de datos, machine learning y sistemas basados en agentes de IA, y he desarrollado módulos de frontend y backend en proyectos de equipo con bases de datos relacionales, autenticación y despliegue en la nube.</p>
   <p>Vivo en Bogotá, Colombia.</p>
 </section>
-
+ 
 <section id="proyectos">
   <h2>Proyectos</h2>
-
+ 
   <article class="featured">
     <h3><a href="https://github.com/arnoldoswaldo/NATUDAI-OS">NatuDai ERP</a></h3>
     <p class="desc">ERP full-stack para una empresa de cosmética natural, desarrollado en un equipo de 5 personas. Construí módulos de frontend y backend, la autenticación con JWT y el control de acceso por roles. Desplegado en Railway.</p>
     <ul class="chips"><li>React</li><li>Vite</li><li>Node.js</li><li>Express</li><li>MariaDB</li><li>JWT</li></ul>
   </article>
-
+ 
   <article class="project">
     <div class="meta">
       <h3><a href="https://github.com/arnoldoswaldo/sistema-agentico">Planificador de itinerarios con agentes de IA</a></h3>
@@ -215,7 +215,7 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
     </div>
     <div class="body"><p class="desc">Sistema de planificación de viajes con agentes autónomos orquestados con LangGraph, conectado a una interfaz web mediante CopilotKit.</p></div>
   </article>
-
+ 
   <article class="project">
     <div class="meta">
       <h3><a href="https://github.com/arnoldoswaldo/rag">Sistema RAG sobre documentos PDF</a></h3>
@@ -223,7 +223,7 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
     </div>
     <div class="body"><p class="desc">Ingesta documentos PDF y responde preguntas sobre su contenido con embeddings vectoriales y un LLM. Lo apliqué al estatuto general de la UNAL.</p></div>
   </article>
-
+ 
   <article class="project">
     <div class="meta">
       <h3><a href="https://github.com/arnoldoswaldo/detector-de-fraude-ml-dl">Detección de fraude con tarjetas de crédito</a></h3>
@@ -231,7 +231,7 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
     </div>
     <div class="body"><p class="desc">Análisis exploratorio, modelos clásicos con balanceo de clases, una red neuronal y un ensamble sobre el dataset ULB de Kaggle. La red neuronal fue el mejor modelo, con un PR-AUC de aproximadamente 0.80.</p></div>
   </article>
-
+ 
   <article class="project">
     <div class="meta">
       <h3><a href="https://github.com/arnoldoswaldo/unal-ap">Plataforma web de preparación académica</a></h3>
@@ -239,11 +239,11 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
     </div>
     <div class="body"><p class="desc">Aplicación web académica desarrollada para la universidad.</p></div>
   </article>
-
+ 
   <p>Hay más trabajo en mi <a href="https://github.com/arnoldoswaldo?tab=repositories">lista completa de repositorios</a>.</p>
 </section>
 </main>
-
+ 
 <div class="alt">
 <div class="wrap">
 <section id="tecnologias">
@@ -263,7 +263,7 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
 </section>
 </div>
 </div>
-
+ 
 <main class="wrap">
 <section id="formacion">
   <h2>Formación</h2>
@@ -276,7 +276,7 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
   </ul>
 </section>
 </main>
-
+ 
 <footer class="band" id="contacto">
   <div class="wrap">
     <h2 style="color: var(--band-ink)">Contacto</h2>
@@ -288,7 +288,7 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
     <p>Arnold Oswaldo Acosta Ortega, Bogotá, Colombia.</p>
   </div>
 </footer>
-
+ 
 <script>
 (function () {
   var root = document.documentElement;
@@ -311,3 +311,4 @@ footer p { color: var(--band-muted); margin: 0; font-size: 0.95rem; }
 </script>
 </body>
 </html>
+ 
