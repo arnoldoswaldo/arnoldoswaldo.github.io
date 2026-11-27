@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arnold Acosta | Ingeniería de Sistemas y Computación</title>
+<meta name="description" content="Portafolio de Arnold Oswaldo Acosta Ortega: desarrollo full-stack, datos y agentes de IA.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F4E79'/%3E%3Ctext x='16' y='23' font-size='20' font-family='Georgia,serif' text-anchor='middle' fill='white'%3EA%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #f4f6f9;
+  --ink: #14202e;
+  --muted: #55657a;
+  --rule: #cfd7e2;
+  --accent: #1f4e79;
+  --accent-ink: #ffffff;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e141b;
+    --ink: #e6ecf3;
+    --muted: #96a5b8;
+    --rule: #26313f;
+    --accent: #8dbbe8;
+    --accent-ink: #0e141b;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.wrap { max-width: 56rem; margin: 0 auto; padding: 0 1.5rem; }
+
+header.hero { padding: 5rem 0 3rem; }
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 7vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+  max-width: 14em;
+}
+.hero .lead { font-size: 1.25rem; color: var(--muted); max-width: 36em; margin: 0 0 2rem; }
+.hero .name { font-weight: 600; color: var(--ink); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--accent);
+}
+.btn.primary { background: var(--accent); color: var(--accent-ink); }
+.btn:hover { text-decoration: underline; }
+
+section { padding: 2.75rem 0; border-top: 1px solid var(--rule); }
+h2 {
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin: 0 0 1.5rem;
+}
+section p { max-width: 38em; margin: 0 0 1rem; }
+
+.project {
+  display: grid;
+  gap: 0.35rem 2rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rule);
+}
+.project:first-of-type { border-top: 0; padding-top: 0; }
+.project h3 { font-family: var(--serif); font-size: 1.3rem; line-height: 1.25; margin: 0; }
+.project .stack { color: var(--muted); font-size: 0.95rem; margin: 0; }
+.project .desc { margin: 0; max-width: 38em; }
+.project .desc + .desc { margin-top: 0.5rem; }
+@media (min-width: 46rem) {
+  .project { grid-template-columns: 17rem 1fr; }
+  .project .meta { grid-column: 1; }
+  .project .body { grid-column: 2; }
+}
+
+dl.skills { margin: 0; display: grid; gap: 0.9rem 2rem; }
+dl.skills dt { font-weight: 600; }
+dl.skills dd { margin: 0; color: var(--muted); }
+@media (min-width: 46rem) {
+  dl.skills { grid-template-columns: 14rem 1fr; }
+}
+
+ul.plain { list-style: none; margin: 0; padding: 0; }
+ul.plain li { padding: 0.55rem 0; border-top: 1px solid var(--rule); max-width: 42em; }
+ul.plain li:first-child { border-top: 0; padding-top: 0; }
+ul.plain .org { color: var(--muted); }
+
+footer { padding: 2.5rem 0 4rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.95rem; }
+.contact { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin: 0 0 1rem; padding: 0; list-style: none; font-size: 1.0625rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Construyo software, datos y agentes de IA.</h1>
+  <p class="lead"><span class="name">Arnold Oswaldo Acosta Ortega</span>, estudiante de Ingeniería de Sistemas y Computación en la Universidad Nacional de Colombia. Busco mi primer rol como Desarrollador de Software, Backend Developer o Analista de Datos Junior.</p>
+  <div class="actions">
+    <a class="btn primary" href="#proyectos">Ver proyectos</a>
+    <a class="btn" href="CV_Arnold_Acosta.pdf">Descargar CV (PDF)</a>
+    <a class="btn" href="mailto:aracosta@unal.edu.co">Escribirme</a>
+  </div>
+</header>
+
+<main>
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <p>Me gusta llevar un proyecto desde el modelo de datos hasta el despliegue. He desarrollado módulos de frontend y backend en proyectos de equipo con bases de datos relacionales, autenticación y despliegue en la nube, y trabajo con aprendizaje automático y sistemas basados en agentes de IA.</p>
+  <p>Vivo en Bogotá, Colombia.</p>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+
+  <article class="project">
+    <div class="meta">
+      <h3><a href="https://github.com/arnoldoswaldo/NATUDAI-OS">NatuDai ERP</a></h3>
+      <p class="stack">React, Vite, Node.js, Express, MariaDB, JWT</p>
+    </div>
+    <div class="body">
+      <p class="desc">ERP full-stack para una empresa de cosmética natural, desarrollado en un equipo de 5 personas. Construí módulos de frontend y backend, la autenticación con JWT y el control de acceso por roles. Desplegado en Railway.</p>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="meta">
+      <h3><a href="https://github.com/arnoldoswaldo/sistema-agentico">Planificador de itinerarios con agentes de IA</a></h3>
+      <p class="stack">LangGraph, FastAPI, Next.js, CopilotKit, Gemini</p>
+    </div>
+    <div class="body">
+      <p class="desc">Sistema de planificación de viajes con agentes autónomos orquestados con LangGraph, conectado a una interfaz web mediante CopilotKit.</p>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="meta">
+      <h3><a href="https://github.com/arnoldoswaldo/rag">Sistema RAG sobre documentos PDF</a></h3>
+      <p class="stack">LangChain, LangGraph, PGVector, Gemini</p>
+    </div>
+    <div class="body">
+      <p class="desc">Ingesta documentos PDF y responde preguntas sobre su contenido con embeddings vectoriales y un LLM. Lo apliqué al estatuto general de la UNAL.</p>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="meta">
+      <h3><a href="https://github.com/arnoldoswaldo/detector-de-fraude-ml-dl">Detección de fraude con tarjetas de crédito</a></h3>
+      <p class="stack">Python, Pandas, Scikit-learn, Keras, SMOTE</p>
+    </div>
+    <div class="body">
+      <p class="desc">Análisis exploratorio, modelos clásicos con balanceo de clases, una red neuronal y un ensamble sobre el dataset ULB de Kaggle. La red neuronal fue el mejor modelo, con un PR-AUC de aproximadamente 0.80.</p>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="meta">
+      <h3><a href="https://github.com/arnoldoswaldo/unal-ap">Plataforma web de preparación académica</a></h3>
+      <p class="stack">Java, Spring, JavaScript, SQLite</p>
+    </div>
+    <div class="body">
+      <p class="desc">Aplicación web académica desarrollada para la universidad.</p>
+    </div>
+  </article>
+
+  <p>Hay más trabajo en mi <a href="https://github.com/arnoldoswaldo?tab=repositories">lista completa de repositorios</a>.</p>
+</section>
+
+<section id="tecnologias">
+  <h2>Tecnologías</h2>
+  <dl class="skills">
+    <dt>Lenguajes</dt>
+    <dd>Python, Java, C, SQL, JavaScript, HTML, CSS</dd>
+    <dt>Desarrollo web</dt>
+    <dd>React, Node.js, Express, Spring, Next.js, FastAPI, Tailwind CSS</dd>
+    <dt>Datos e IA</dt>
+    <dd>Pandas, NumPy, Scikit-learn, Keras, LangChain, LangGraph, RAG</dd>
+    <dt>Bases de datos</dt>
+    <dd>MariaDB, SQLite, PostgreSQL con PGVector</dd>
+    <dt>Herramientas</dt>
+    <dd>Git, GitHub, Docker, Linux, Jupyter, Burp Suite</dd>
+  </dl>
+</section>
+
+<section id="formacion">
+  <h2>Formación</h2>
+  <ul class="plain">
+    <li><strong>Ingeniería de Sistemas y Computación</strong> <span class="org">(en curso), Universidad Nacional de Colombia</span></li>
+    <li><strong>GCI World, Global Consumer Intelligence</strong> <span class="org">Matsuo-Iwasawa Laboratory, The University of Tokyo, 2026</span></li>
+    <li><strong>Oracle Next Education</strong> <span class="org">Front-End y Back-End: Java, Spring, JavaScript, Git</span></li>
+    <li><strong>Especialización en Ciencia de Datos</strong> <span class="org">Coursera, Universidad de los Andes</span></li>
+    <li><strong>Desarrollo Front-End, nivel básico</strong> <span class="org">125 horas</span></li>
+  </ul>
+</section>
+</main>
+
+<footer>
+  <ul class="contact">
+    <li><a href="mailto:aracosta@unal.edu.co">aracosta@unal.edu.co</a></li>
+    <li><a href="https://github.com/arnoldoswaldo">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/arnold-acosta-16301069/">LinkedIn</a></li>
+  </ul>
+  <p>Arnold Oswaldo Acosta Ortega, Bogotá, Colombia.</p>
+</footer>
+
+</div>
+</body>
+</html>
